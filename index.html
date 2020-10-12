@@ -106,28 +106,101 @@
             </ul>
           </div>
           <div>
-              <img src="images/blog.png" alt="">
-              <img src="images/insta.png" alt="">
-          </div>
+              <a href="#"><img src="images/blog.png" alt=""></a>
+              <a href="#"><img src="images/insta.png" alt=""></a>          </div>
         </div>
       </div>
     </header>
     <main>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a href="#"><img src="images/a1.jpg" alt="" /></a>
+      <section>
+     
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#"><img src="images/a1.jpg" alt="" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="images/a2.jpg" alt="" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="images/a3.jpg" alt="" /></a>
+            </div>
           </div>
-          <div class="swiper-slide">
-            <a href="#"><img src="images/a2.jpg" alt="" /></a>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="product">
+        <h3>Alpha product</h3>
+        <div class="product">
+          <div class="product_box">
+            <div>
+              <img src="images/pro_1.jpg" alt="">
+            </div>
+            <div class="up">
+              <a href="#">
+                <p>포스터칼라</p>
+                <span>+</span>
+              </a>
+            </div>
           </div>
-          <div class="swiper-slide">
-            <a href="#"><img src="images/a3.jpg" alt="" /></a>
+          <div class="product_box">
+            <div>
+              <img src="images/pro_2.jpg" alt="">
+            </div>
+            <div class="up">
+              <a href="#">
+                <p>수채화</p>
+                <span>+</span>
+              </a>
+            </div>
+          </div>
+          <div class="product_box">
+            <div>
+              <img src="images/pro_3.jpg" alt="">
+            </div>
+            <div class="up">
+              <a href="#">
+                <p>아크릴물감</p>
+                <span>+</span>
+              </a>
+            </div>
+          </div>
+          <div class="product_box">
+            <div>
+              <img src="images/pro_4.jpg" alt="">
+            </div>
+            <div class="up">
+              <a href="#">
+                <p>보조제</p>
+                <span>+</span>
+              </a>
+            </div>
+          </div>
+          <div class="product_box">
+            <div>
+              <img src="images/pro_5.jpg" alt="">
+            </div>
+            <div class="up">
+              <a href="#">
+                <p>마커</p>
+                <span>+</span>
+              </a>
+            </div>
+          </div>
+          <div class="product_box">
+            <div>
+              <img src="images/pro_6.jpg" alt="">
+            </div>
+            <div class="up">
+              <a href="#">
+                <p>한국화물감</p>
+                <span>+</span>
+              </a>
+            </div>
           </div>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
+      </section>
     </main>
     <footer></footer>
     <!-- Swiper -->
@@ -139,6 +212,12 @@
           
             $(this).children('ul').hide();
         })
+
+        $('.product_box').hover(function(){
+          $(this).children($('.up')).css({top:0})
+        },function(){
+          $(this).children($('.up')).css({top:317})
+      })
     </script>
     <!-- Swiper JS -->
   </body>

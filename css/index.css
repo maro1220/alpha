@@ -51,7 +51,7 @@ body {
 }
 
 .nav{
-
+    height: 1000px;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
@@ -98,4 +98,71 @@ body {
     color: white;
     font-weight: 700;
     width: 150px;
+}
+
+.product{
+    width: 1400px;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+}
+
+.product>h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.product>h3::first-letter{
+    color:red;
+}
+
+.product>.product_box{
+    display: flex;
+    flex-direction: column;
+    width: 415px;
+    height: 317px;
+    overflow: hidden;   
+    position: relative;
+    margin: 10px;
+}
+
+.product>.product_box>div{
+    width: 415px;
+    height: 317px;
+}
+
+.product>.product_box>.up{
+    position: absolute;
+    display: flex;
+    background: rgba(0,0,0,0.5);
+    width: 415px;
+    height: 317px;
+    top:317px;
+    transition: 0.3s;
+ 
+}
+
+.product>.product_box>.up>a{
+    width: 415px;
+    height: 317px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product>.product_box>.up>a>p{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+
+}
+
+.product>.product_box>.up>a>span{
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
 }
