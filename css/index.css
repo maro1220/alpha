@@ -4,10 +4,17 @@
     padding:0;
     text-decoration: none;
 }
+a{
+    color: black;
+}
+
+.hidden{
+    display: none;
+}
 
 html,
 body {
-  
+  overflow-x: hidden;
   position: relative;
   height: 100%;
 }
@@ -51,13 +58,30 @@ body {
 }
 
 .nav{
-    height: 1000px;
+    height: 950px;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
     width: 1600px;
     margin:0 auto;
 
+}
+
+.topbox{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background: black;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 50px;
 }
 
 .nav>div{
@@ -104,12 +128,14 @@ body {
     width: 1400px;
     margin:0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 70px;
 }
 
 .product>h3{
+    margin-left: 10px;
+    margin-bottom: 30px;
     font-size: 1.8rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -165,4 +191,310 @@ body {
     color: white;
     font-weight: 700;
     font-size: 2rem;
+}
+
+.alphaNews {
+    margin-bottom: 70px;
+    width: 100vw;
+    height: 100%;
+    background-color:rgb(240, 240, 240) ;
+ 
+}
+
+.alphaNews>.alphaNewsArea{
+    width: 1400px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.firstNews{
+    background:rgb(245, 245, 245);
+    padding:20px;
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.firstNews>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.firstNews>div>p{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.firstNews>div>p::first-letter{
+    color: red;
+}
+
+.firstNews>div:nth-of-type(1)>a>span{
+    font-size: 1.8rem;
+}
+.firstNews>div:nth-of-type(3) a{
+    display: block;
+    line-height: 55px;
+}
+.firstNews>div:nth-of-type(3) span{
+    color: rgb(83, 83, 83);
+  
+    padding:20px 20px 10px 0;
+}
+
+.firstNews>div:nth-of-type(3){
+    border-top:1px solid rgb(54, 54, 54);
+}
+
+.firstNews>div>div{
+    display: flex;
+    flex-direction: column;
+    margin:20px 20px;
+}
+
+.firstNews>div>div p{
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.firstNews>div>div span{
+    font-size: 0.9rem;
+    color: rgb(83, 83, 83);
+}
+
+.firstNews>div>div>span{
+    text-align: right;
+}
+
+.otherNews{
+    background-color:rgb(230, 230, 230) ;
+    padding:30px 20px;
+    flex: 0.2;
+    margin:0;
+
+}
+
+.otherNews:hover{
+    background: rgba(0,0,0,0.1);
+}
+
+.otherNews>a{
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.otherNews>a>img{
+    height: 63px;
+}
+
+.otherNews>a>p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding:20px;
+    border-bottom: 5px solid rgb(141, 1, 1);
+}
+
+.otherNews>a>span{
+    padding-top: 20px;
+    line-height: 20px;
+    color: rgb(58, 58, 58);
+}
+
+.othercolor{
+
+    background: rgba(0,0,0,0.08);
+}
+
+.alphainsta{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.alphainsta>h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 20px 0;
+
+}
+
+.alphainsta>h3::first-letter{
+    color:red;
+}
+
+.alphainsta>.alphainstaArea{
+    width: 1400px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alphainsta>.alphainstaArea>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alphainsta>.alphainstaArea>p{
+    margin:10px 0;
+    font-size: 1.1rem;
+}
+
+.alphainsta>.alphainstaArea>div>a>img{
+    width: 150px;
+    margin:5px;
+}
+
+.footerLine{
+    width: 100vw;
+    border-top:1px solid rgb(230, 230, 230);
+    border-bottom:1px solid rgb(230, 230, 230);
+}
+
+.footerLine>ul{
+    width: 1400px;
+    margin:0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+}
+
+.footerLine>ul>li{
+    margin: 10px;
+    font-weight: 700;
+    font-style: 0.9rem;
+    
+}
+
+.footerLine>ul>li>a{
+
+    text-transform: uppercase;
+    color: gray;
+}
+
+.footerWrap{
+    width: 1400px;
+    margin:0 auto;
+    display: flex;
+    
+}
+
+.footerWrap>.footerWrapLeft{
+    margin:15px;
+    flex:0.8;
+   
+}
+
+.footerWrap>.footerWrapLeft>p{
+    margin:20px 0;
+    font-weight: 700;
+    color:gray;
+}
+
+.footerWrap>.footerWrapLeft>ul{
+    display: flex;
+    width: 600px;
+    flex-wrap: wrap;
+}
+
+.footerWrap>.footerWrapLeft>ul>li{
+    border-right: 1px solid gray;
+    margin: 5px 0;
+    padding:0 5px;
+    color: gray;
+}
+
+.footerWrap>.footerWrapLeft>ul>li:nth-of-type(1){
+    padding-left: 0;
+}
+
+.footerWrap>.footerWrapLeft>ul>li:nth-of-type(4){
+    padding-left: 0;
+}
+
+.footerWrap>.footerWrapLeft>ul>li:nth-of-type(3){
+    border: none;
+}
+
+.footerWrap>.footerWrapLeft>ul>li:nth-of-type(6){
+    border:none;
+}
+
+.footerWrap>.footerWrapLeft>div>span:nth-of-type(1){
+    border:1px solid gray;
+    padding:1px;
+    font-size: 0.8rem;
+  
+}
+
+.footerWrap>.footerWrapLeft>div>span:nth-of-type(4){
+    border:none;
+}
+
+.footerWrap>.footerWrapLeft>div>span{
+    color: gray;
+    display: inline-block;
+    padding:0 10px;
+    border-right: 1px solid gray;
+    margin: 2px 0;
+}
+
+.footerWrap>.footerWrapLeft>div:nth-of-type(3){
+    margin: 20px 0;
+}
+
+.footerWrap>.footerWrapLeft>div>img{
+    width: 80px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.footerWrap>.footerWrapLeft>div>small{
+    color: gray;
+}
+
+.footerWrap>.footerWrapRight{
+    flex:0.2;
+    width: 100%;
+ 
+    text-align: left;
+    
+}
+
+.footerWrap>.footerWrapRight>p{
+    margin:30px 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color:gray;
+}
+
+.footerWrap>.footerWrapRight>span{
+    font-weight: 700;
+    color: gray;
+    
+}
+
+.footerWrap>.footerWrapRight>div{
+    margin-top: 30px;
+}
+
+.footerWrap>.footerWrapRight>div>a{
+    margin-right: 10px;
 }
