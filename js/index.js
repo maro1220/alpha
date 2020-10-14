@@ -15,3 +15,27 @@ var swiper = new Swiper('.swiper-container', {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  $('.hidenav').hide();
+  $('.navs li').hover(function () {
+    $(this).children('ul').show();
+  }, function () {
+
+    $(this).children('ul').hide();
+  })
+
+  $('.product_box').hover(function () {
+    $(this).children($('.up')).css({
+      top: 0
+    })
+  }, function () {
+    $(this).children($('.up')).css({
+      top: 317
+    })
+  })
+
+  $('.topbox').on('click', function () {
+    $('body, html').animate({
+      scrollTop: 0
+    }, 400)
+  })
